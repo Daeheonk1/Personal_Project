@@ -1,0 +1,99 @@
+.container {
+  text-align: center;
+  width: 100%;
+  background-color: black;
+  color: white;
+
+
+}
+
+.h-component {
+  display: flex;
+  min-height: 100vh;
+  margin: auto;
+}
+
+.hidden {
+  opacity: 0;
+  filter: blur(5px);
+  transition: all 1s;
+
+
+}
+
+.show {
+  opacity: 1;
+  filter: blur(0px);
+  transition: all 1s;
+}
+
+.center {
+  margin: 0px auto;
+  background-image: url("../res/Image/Logo.jpg");
+  width: 100%;
+  font-size: 50px;
+  align-items: center;
+  padding: 390px 0px;
+}
+
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  /*스스로 중간정렬*/
+  align-items: center;
+  /* flex drectioin is column이 column 일 경우에는 align-item로 중간정렬 */
+  gap: 15px;
+}
+
+.flex-column div {
+  display: flex;
+  flex-direction: row;
+}
+
+.flex-column img {
+  width: 45vw;
+  height: 40vh;
+  padding: 5opx;
+}
+
+.flex-column .show img {
+  cursor: pointer;
+}
+
+.flex-column .show img:hover {
+  transform: scale(1.1);
+  transition: all 0.2s;
+}
+
+.flex-column .hidden:first-child {
+  transform: translateX(-100%)
+}
+
+.flex-column .show:first-child {
+  transform: translateX(0);
+  transition: all 1s;
+}
+
+
+.flex-column .hidden:last-child {
+  transform: translateX(100%)
+}
+
+.flex-column .show:last-child {
+  transform: translateX(0);
+  transition: all 1s;
+}
+
+.flex-column p {
+  padding: 10px;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  /* flex direction 이 row일 경우에는 justify-content로 중간정렬 */
+  justify-content: center;
+  margin: auto;
+}
