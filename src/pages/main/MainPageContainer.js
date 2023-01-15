@@ -13,6 +13,14 @@ const MainPageContainer = () => {
 
     const gotopage1 = () => {
         navigate("/page1")
+
+
+    }
+
+    const gotopage2 = () => {
+        navigate("/page2")
+
+
     }
 
     return (
@@ -26,14 +34,18 @@ const MainPageContainer = () => {
                 <div className="flex-column">
                     <div className="hidden">
                         <img onClick={gotopage1} src="http://blog.jinbo.net/attach/615/200937431.jpg" />
-                        <p> tjfaud</p>
+                        <div className="flex-column paragraph">
+                            <p> Autism Spectrum Disorder is a developmental disorder that hinders one’s ability to communicate, learn, behave ,and interact with others. It is a disorder that can be diagnosed at any age. Symptoms generally appear in the first two years of the child’s life. </p>
+                            <p> Click To Learn More </p>
+                        </div>
+
                     </div>
                     <div className="hidden">
-                        <p> tjfaud</p>
-                        <img src="http://blog.jinbo.net/attach/615/200937431.jpg" />
+                        <p> Click to see Thuy's story</p>
+                        <img onClick={gotopage2} src="http://blog.jinbo.net/attach/615/200937431.jpg" />
                     </div>
                 </div>
-            </div>
+            </div >
 
             <div className="h-compntnt hidden">
                 <div className="flex-row">
@@ -42,7 +54,7 @@ const MainPageContainer = () => {
                 </div>
 
             </div>
-        </div>
+        </div >
     );
 };
 

@@ -34,6 +34,7 @@
   font-size: 50px;
   align-items: center;
   padding: 390px 0px;
+  background-repeat: no-repeat;
 }
 
 
@@ -96,4 +97,14 @@
   /* flex direction 이 row일 경우에는 justify-content로 중간정렬 */
   justify-content: center;
   margin: auto;
+}
+
+.hidden p {
+
+  width: 400px;
+  text-align: left;
+}
+
+.flex-column.paragraph {
+  flex-direction: column;
 }
