@@ -1,8 +1,9 @@
 .container {
   text-align: center;
   width: 100%;
-  background-color: black;
-  color: white;
+  background-color: white;
+  color: rgb(28, 50, 4);
+
 
 
 }
@@ -11,6 +12,7 @@
   display: flex;
   min-height: 100vh;
   margin: auto;
+  padding-bottom: 50px;
 }
 
 .hidden {
@@ -35,6 +37,7 @@
   align-items: center;
   padding: 390px 0px;
   background-repeat: no-repeat;
+  background-position: center;
 }
 
 
@@ -45,7 +48,7 @@
   /*스스로 중간정렬*/
   align-items: center;
   /* flex drectioin is column이 column 일 경우에는 align-item로 중간정렬 */
-  gap: 15px;
+  gap: 60px;
 }
 
 .flex-column div {
@@ -54,9 +57,8 @@
 }
 
 .flex-column img {
-  width: 45vw;
-  height: 40vh;
-  padding: 5opx;
+  width: 470px;
+  height: 400px;
 }
 
 .flex-column .show img {
@@ -97,6 +99,8 @@
   /* flex direction 이 row일 경우에는 justify-content로 중간정렬 */
   justify-content: center;
   margin: auto;
+
+
 }
 
 .hidden p {
@@ -107,4 +111,39 @@
 
 .flex-column.paragraph {
   flex-direction: column;
+  gap: 15px;
+}
+
+.flex-row img {
+  width: 600px;
+
+}
+
+img {
+  margin: 0px 45px;
+  border: 4px solid #5a5a5a;
+  border-radius: 20px
+}
+
+.header {
+  position: absolute;
+  width: 100%;
+  height: 60px;
+  z-index: 1;
+  display: flex;
+  justify-content: right;
+  padding: 5px 50px;
+  box-sizing: border-box;
+}
+
+.header button {
+  background-image: url("../res/Image/arrow.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 50px;
+  height: 50px;
+  border: none;
+  border-radius: 100%;
+  cursor: pointer;
 }

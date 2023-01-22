@@ -2,6 +2,7 @@ import react, { useEffect } from "react";
 import "../../styles/App.css";
 import "../../styles/index.css";
 import { Navigate, useNavigate } from "react-router-dom";
+import Map from "../../common/Map";
 import Observer from "../../utils/observer"
 
 const MainPageContainer = () => {
@@ -9,6 +10,7 @@ const MainPageContainer = () => {
 
     useEffect(() => {
         Observer();
+        window.scrollTo(0, 0);
     }, []);
 
     const gotopage1 = () => {
@@ -47,9 +49,9 @@ const MainPageContainer = () => {
                 </div>
             </div >
 
-            <div className="h-compntnt hidden">
+            <div className="h-component hidden">
                 <div className="flex-row">
-                    <img src="http://blog.jinbo.net/attach/615/200937431.jpg" />
+                    {/* <Map></Map> */}
                     <p> Title</p>
                 </div>
 
