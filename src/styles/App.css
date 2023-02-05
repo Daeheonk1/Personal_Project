@@ -147,3 +147,30 @@ img {
   border-radius: 100%;
   cursor: pointer;
 }
+
+.flex-column .p1_content {
+  flex-direction: column;
+  padding: 10px 63px;
+  align-items: start;
+
+}
+
+.flex-column .p1_content p {
+  padding: 0px;
+
+}
+
+.flex-column .p1_content ul {
+  text-align: start;
+
+}
+
+.flex-column .p1_content ol {
+  text-align: start;
+
+}
+
+.flex-column .p1_content .left {
+  text-align: start;
+
+}
