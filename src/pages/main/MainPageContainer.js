@@ -51,7 +51,9 @@ const MainPageContainer = () => {
 
             <div className="h-component hidden">
                 <div className="flex-row">
-                    {/* <Map></Map> */}
+                    <Map>
+
+                    </Map>
                     <p> Title</p>
                 </div>
 

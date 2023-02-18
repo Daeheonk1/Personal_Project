@@ -174,3 +174,9 @@ img {
   text-align: start;
 
 }
+
+
+.h-component .product-container {
+  flex-direction: column;
+  width: 30%;
+}
