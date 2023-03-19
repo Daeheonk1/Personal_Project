@@ -31,9 +31,9 @@ const Page3 = () => {
 
     return (
         <div className="container">
-            <Header />
+            <Header showHomebuttton={true} />
             <div className="h-component hidden">
-                <div className="center"> </div>
+                <div className="center shop"> </div>
             </div>
             <div className="h-compnent flex-column"></div>
 

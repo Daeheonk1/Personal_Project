@@ -4,8 +4,18 @@ import "../../styles/index.css";
 import { Navigate, useNavigate } from "react-router-dom";
 import Map from "../../common/Map";
 import Observer from "../../utils/observer"
+import shop from "../../res/Image/Shop.svg"
+import Header from "../../common/Header";
+import { useRecoilState } from "recoil";
+import { language } from "../../recoil/lang_recoil";
+import { Main_Label } from "../../common/lang";
+
+
 
 const MainPageContainer = () => {
+
+    const [lang] = useRecoilState(language);
+
     const navigate = useNavigate();
 
     useEffect(() => {
@@ -21,12 +31,16 @@ const MainPageContainer = () => {
 
     const gotopage2 = () => {
         navigate("/page2")
-
-
     }
 
+    const gotopage3 = () => {
+        navigate("/page3")
+    }
+
+    const LABEL = lang === "English" ? Main_Label.EN : Main_Label.VI;
     return (
         <div className="container">
+            <Header />
             <div className="h-component hidden">
                 <div className="center">
 
@@ -35,16 +49,16 @@ const MainPageContainer = () => {
             <div className=" h-component hidden border">
                 <div className="flex-column">
                     <div className="hidden">
-                        <img onClick={gotopage1} src="http://blog.jinbo.net/attach/615/200937431.jpg" />
+                        <img className="main-img" onClick={gotopage1} src="http://blog.jinbo.net/attach/615/200937431.jpg" />
                         <div className="flex-column paragraph">
-                            <p> Autism Spectrum Disorder is a developmental disorder that hinders one’s ability to communicate, learn, behave ,and interact with others. It is a disorder that can be diagnosed at any age. Symptoms generally appear in the first two years of the child’s life. </p>
-                            <p> Click To Learn More </p>
+                            <p> {LABEL.ASD_SHORT_INFO} </p>
+                            <p>  {LABEL.ASD_CLICK}</p>
                         </div>
 
                     </div>
                     <div className="hidden">
                         <p> Click to see Thuy's story</p>
-                        <img onClick={gotopage2} src="http://blog.jinbo.net/attach/615/200937431.jpg" />
+                        <img className="main-img" onClick={gotopage2} src="http://blog.jinbo.net/attach/615/200937431.jpg" />
                     </div>
                 </div>
             </div >
@@ -55,6 +69,16 @@ const MainPageContainer = () => {
 
                     </Map>
                     <p> Title</p>
+                </div>
+
+
+            </div>
+            <div>
+                <div className="h-component hidden">
+                    <div className="flex-column">
+                        <img src={shop} onClick={gotopage3}></img>
+                        <img></img>
+                    </div>
                 </div>
 
             </div>

@@ -64,3 +64,25 @@ export const P1_Label = {
         ASD_TREATMENTS_DEF5: "Thuốc: Sử dụng để quản lý các triệu chứng như sự hưng phấn, lo lắng hoặc hành vi lặp đi lặp lại",
     }
 }
+
+export const Main_Label = {
+    EN: {
+        ASD_SHORT_INFO: "Autism Spectrum Disorder is a developmental disorder that hinders one’s ability to communicate, learn, behave ,and interact with others. It is a disorder that can be diagnosed at any age. Symptoms generally appear in the first two years of the child’s life.",
+        ASD_CLICK: "Click To Learn More",
+    },
+    VI: {
+        ASD_SHORT_INFO: "Rối loạn phổ tự kỷ là một rối loạn phát triển làm trở ngại đến khả năng giao tiếp, học tập, hành vi và tương tác với người khác. Đây là một rối loạn có thể được chẩn đoán ở mọi độ tuổi. Các triệu chứng thường xuất hiện trong hai năm đầu đời của trẻ.",
+        ASD_CLICK: "Nhấn vào để tìm hiểu thêm",
+    }
+
+
+
+}
+export const P2_Label = {
+    EN: {
+
+    },
+    VI: {
+
+    }
+}
