@@ -9,6 +9,8 @@ import Header from "../../common/Header";
 import { useRecoilState } from "recoil";
 import { language } from "../../recoil/lang_recoil";
 import { Main_Label } from "../../common/lang";
+import coverimage1 from "../../res/Image/coverimage1.png"
+import coverimage2 from "../../res/Image/coverimage2.png"
 
 
 
@@ -49,7 +51,7 @@ const MainPageContainer = () => {
             <div className=" h-component hidden border">
                 <div className="flex-column">
                     <div className="hidden">
-                        <img className="main-img" onClick={gotopage1} src="http://blog.jinbo.net/attach/615/200937431.jpg" />
+                        <img className="main-img" onClick={gotopage1} src={coverimage1} />
                         <div className="flex-column paragraph">
                             <p> {LABEL.ASD_SHORT_INFO} </p>
                             <p>  {LABEL.ASD_CLICK}</p>
@@ -58,7 +60,7 @@ const MainPageContainer = () => {
                     </div>
                     <div className="hidden">
                         <p> Click to see Thuy's story</p>
-                        <img className="main-img" onClick={gotopage2} src="http://blog.jinbo.net/attach/615/200937431.jpg" />
+                        <img className="main-img" onClick={gotopage2} src={coverimage2} />
                     </div>
                 </div>
             </div >
